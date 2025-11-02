@@ -107,19 +107,20 @@ quickwear-fashion-website/
 
 ## 📸 Screenshots
 
-### Homepage Hero Section
-![Homepage](![Uploading image.png…])
+### 🏠 Homepage Hero Section
+![Homepage](https://github.com/Vishal01z/QuickWear/blob/main/Screenshot%20(259)%20-%20Copy.png?raw=true)
 
-### Trending Categories
-![Categories]([screenshots/categories.png](https://github.com/Vishal01z/QuickWear/blob/8aeb6c1abf4ef6b125820a58b28e7dd38997bb10/Screenshot%20(259)%20-%20Copy.png))
+### 👕 Trending Categories
+![Categories](https://github.com/Vishal01z/QuickWear/blob/main/Screenshot%20(260)%20-%20Copy.png?raw=true)
 
-### Brand Spotlight
-![Brands](screenshots/brands.png)
+### 🌟 Brand Spotlight
+![Brands](https://github.com/Vishal01z/QuickWear/blob/main/Screenshot%20(261).png?raw=true)
 
-### Footwear Collection
-![Footwear](screenshots/footwear.png)
+### 👟 Footwear Collection
+![Footwear](https://github.com/Vishal01z/QuickWear/blob/main/Screenshot%20(265).png?raw=true)
 
 *Note: Add your actual screenshots in a `screenshots/` folder*
+
 
 ---
 
