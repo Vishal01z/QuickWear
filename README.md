@@ -108,10 +108,10 @@ quickwear-fashion-website/
 ## 📸 Screenshots
 
 ### Homepage Hero Section
-![Homepage](screenshots/homepage.png)
+![Homepage](Screenshot (259) - Copy.png)
 
 ### Trending Categories
-![Categories](screenshots/categories.png)
+![Categories]([screenshots/categories.png](https://github.com/Vishal01z/QuickWear/blob/8aeb6c1abf4ef6b125820a58b28e7dd38997bb10/Screenshot%20(259)%20-%20Copy.png))
 
 ### Brand Spotlight
 ![Brands](screenshots/brands.png)
