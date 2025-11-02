@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shopping Cart | QuickWear</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/frontend/styles.css">
+    <link rel="stylesheet" href="/shop/card/card.css">
+</head>
+<body>
+    <!-- Loading Animation (same as homepage) -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">QuickWear</div>
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Header (same as homepage) -->
+    <header class="header">
+        <!-- Copy header from index.html -->
+    </header>
+
+    <!-- Main Cart Content -->
+    <main class="cart-container">
+        <div class="cart-header">
+            <h1>Your Shopping Cart</h1>
+            <p class="cart-item-count"><span id="cart-count">0</span> items</p>
+        </div>
+
+        <div class="cart-grid">
+            <!-- Cart Items Column -->
+            <div class="cart-items">
+                <div class="cart-empty" id="cart-empty">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h2>Your cart is empty</h2>
+                    <p>Start shopping to add items to your cart</p>
+                    <a href="/frontend/index.html" class="btn btn-primary">Continue Shopping</a>
+                </div>
+
+                <div class="cart-items-list" id="cart-items-list">
+                    <!-- Dynamically populated by cart.js -->
+                </div>
+            </div>
+
+            <!-- Order Summary Column -->
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-details">
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span id="subtotal">$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping</span>
+                        <span id="shipping">$5.99</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Tax</span>
+                        <span id="tax">$0.00</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span id="total">$5.99</span>
+                    </div>
+                </div>
+                <button id="checkout-btn" class="btn btn-primary btn-block">Proceed to Checkout</button>
+                <div class="payment-methods">
+                    <img src="/Logos-01.png" alt="Accepted payment methods">
+                </div>
+            </div>
+        </div>
+
+        <!-- Recently Viewed -->
+        <section class="recently-viewed">
+            <h2>Recently Viewed</h2>
+            <div class="products-grid" id="recently-viewed">
+                <!-- Dynamically populated -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (same as homepage) -->
+    <footer class="footer">
+        <!-- Copy footer from index.html -->
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script src="/shop/card/card.js"></script>
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Collection | QuickWear</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="women.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">QuickWear</div>
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <a href="/frontend/index.html" class="logo">
+                   <span class="logo-text">Quick<span class="logo-accent">Wear</span>
+                    <!-- <div class="logo-underline"></div> -->
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="/frontend/index.html" class="nav-link">Home</a>
+                <a href="women.html" class="nav-link active">Shop</a>
+                <a href="../index.html#collections" class="nav-link">Collections</a>
+                <a href="../index.html#about" class="nav-link">About</a>
+                <a href="../index.html#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Search products..." class="search-input">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <div class="action-icons">
+                    <a href="/backend/routes/auth/login.html" class="action-icon">
+                        <i class="fas fa-user" title="Account"></i>
+                    </a>
+                    <a href="#" class="action-icon">
+                        <i class="far fa-heart" title="Wishlist"></i>
+                    </a>
+                    <a href="/shop/card/card.html" class="cart-wrapper">
+                        <i class="fas fa-shopping-bag" title="Cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Women's Category Hero -->
+    <section class="category-hero">
+        <div class="category-hero-content">
+            <h1>Women's Collection</h1>
+            <p>Elegant, contemporary styles for every occasion</p>
+        </div>
+    </section>
+
+    <!-- Women's Subcategories -->
+    <section class="subcategories-section">
+        <div class="container">
+            <div class="subcategories-grid">
+                <a href="#" class="subcategory-card" data-category="dresses">
+                    <div class="subcategory-image">
+                        <img src="https://m.media-amazon.com/images/I/718UPcEuxfL._SY741_.jpg" alt="Dresses">
+                    </div>
+                    <h3>Dresses</h3>
+                </a>
+                
+                <a href="#" class="subcategory-card" data-category="tops">
+                    <div class="subcategory-image">
+                        <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=634&q=80" alt="Tops">
+                    </div>
+                    <h3>Tops</h3>
+                </a>
+                
+                <a href="#" class="subcategory-card" data-category="bottoms">
+                    <div class="subcategory-image">
+                        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&auto=format&fit=crop&w=634&q=80" alt="Bottoms">
+                    </div>
+                    <h3>Bottoms</h3>
+                </a>
+                
+                <a href="#" class="subcategory-card" data-category="outerwear">
+                    <div class="subcategory-image">
+                        <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=634&q=80" alt="Outerwear">
+                    </div>
+                    <h3>Outerwear</h3>
+                </a>
+                
+                <a href="#" class="subcategory-card" data-category="activewear">
+                    <div class="subcategory-image">
+                        <img src="https://m.media-amazon.com/images/I/61VVvRE63RL._SX679_.jpg" alt="Activewear">
+                    </div>
+                    <h3>Activewear</h3>
+                </a>
+                
+                <a href="#" class="subcategory-card" data-category="accessories">
+                    <div class="subcategory-image">
+                        <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=634&q=80" alt="Accessories">
+                    </div>
+                    <h3>Accessories</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Women's Products Section -->
+    <!-- Women's Products Section -->
+<section class="women-products-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Women's Fashion</h2>
+            <p class="section-subtitle">Curated styles for every woman</p>
+        </div>
+        
+        <div class="products-filter">
+            <div class="filter-group">
+                <label for="sort-by">Sort by:</label>
+                <select id="sort-by" class="filter-select">
+                    <option value="featured">Featured</option>
+                    <option value="newest">Newest</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="rating">Customer Rating</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="filter-size">Size:</label>
+                <select id="filter-size" class="filter-select">
+                    <option value="all">All Sizes</option>
+                    <option value="xs">XS</option>
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="filter-color">Color:</label>
+                <select id="filter-color" class="filter-select">
+                    <option value="all">All Colors</option>
+                    <option value="black">Black</option>
+                    <option value="white">White</option>
+                    <option value="blue">Blue</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="products-grid">
+            <!-- Products will be loaded here via JavaScript -->
+        </div>
+        
+        <div class="pagination">
+            <button class="pagination-btn" disabled><i class="fas fa-chevron-left"></i></button>
+            <button class="pagination-btn active">1</button>
+            <button class="pagination-btn">2</button>
+            <button class="pagination-btn">3</button>
+            <button class="pagination-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+</section>
+
+    <!-- Style Guide Section -->
+    <section class="style-guide-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Style Inspiration</h2>
+                <p class="section-subtitle">Discover how to wear our pieces</p>
+            </div>
+            
+            <div class="style-guide-grid">
+                <div class="style-card">
+                    <div class="style-image">
+                        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Office Chic">
+                        <div class="style-overlay">
+                            <h3>Office Chic</h3>
+                            <a href="#" class="style-btn">View Look</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="style-card">
+                    <div class="style-image">
+                        <img src="https://images.unsplash.com/photo-1520367445093-50dc08a59d9d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Weekend Casual">
+                        <div class="style-overlay">
+                            <h3>Weekend Casual</h3>
+                            <a href="#" class="style-btn">View Look</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="style-card">
+                    <div class="style-image">
+                        <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Evening Elegance">
+                        <div class="style-overlay">
+                            <h3>Evening Elegance</h3>
+                            <a href="#" class="style-btn">View Look</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="newsletter-background">
+            <div class="newsletter-shapes">
+                <div class="shape-circle"></div>
+                <div class="shape-triangle"></div>
+                <div class="shape-square"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Get Women's Style Tips</h2>
+                    <p>Subscribe for exclusive fashion advice, new arrivals, and special offers.</p>
+                </div>
+                <form class="newsletter-form" id="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email" class="newsletter-input" required>
+                        <button type="submit" class="newsletter-btn">
+                            <span>Subscribe</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <p class="newsletter-privacy">We respect your privacy. Unsubscribe anytime.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/frontend/index.html" class="footer-logo">
+                        <span class="logo-text">Quick</span><span class="logo-accent">Wear</span>
+                    </a>
+                    <p class="footer-description">
+                        Your premium destination for contemporary fashion. We believe style should be accessible, 
+                        sustainable, and uniquely yours.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Shop</h3>
+                        <ul>
+                            <li><a href="women.html">Women's Collection</a></li>
+                            <li><a href="../routes/shop/men.html">Men's Collection</a></li>
+                            <li><a href="../routes/shop/accessories.html">Accessories</a></li>
+                            <li><a href="../routes/shop/new-arrivals.html">New Arrivals</a></li>
+                            <li><a href="../routes/shop/sale.html">Sale Items</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="../routes/support/help.html">Help Center</a></li>
+                            <li><a href="../routes/account/orders.html">Track Your Order</a></li>
+                            <li><a href="../routes/support/returns.html">Returns & Exchanges</a></li>
+                            <li><a href="../routes/support/shipping.html">Shipping Information</a></li>
+                            <li><a href="../routes/support/size-guide.html">Size Guide</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="../routes/about.html">About Us</a></li>
+                            <li><a href="../routes/careers.html">Careers</a></li>
+                            <li><a href="../routes/press.html">Press</a></li>
+                            <li><a href="../routes/sustainability.html">Sustainability</a></li>
+                            <li><a href="../routes/affiliate.html">Affiliate Program</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Connect</h3>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Fashion Avenue, Style City, SC 12345</li>
+                            <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                            <li><i class="fas fa-envelope"></i> hello@quickwear.com</li>
+                            <li><i class="fas fa-clock"></i> Mon-Fri: 9AM-6PM EST</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p>&copy; 2024 QuickWear. All rights reserved.</p>
+                </div>
+                <div class="footer-bottom-right">
+                    <a href="../routes/legal/privacy.html">Privacy Policy</a>
+                    <a href="../routes/legal/terms.html">Terms of Service</a>
+                    <a href="../routes/legal/cookies.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/frontend/script.js"></script>
+    <script src="women.js"></script>
+</body>
+</html>
